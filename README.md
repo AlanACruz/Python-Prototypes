@@ -3,7 +3,7 @@
 
 # git clone
 ```
-git clone git@github.com:AlanACruz/JavaScript-Prototypes.git ~/git/
+git clone git@github.com:AlanACruz/Python-Prototypes.git ~/git/
 ```
 
 # install docker
