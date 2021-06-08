@@ -39,45 +39,29 @@ sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 ```
 
-# Pull NodeJS container
+# Pull Python image
 ```
-docker pull node:current
+docker pull python:latest
 ```
 
-# Run Node build from container
+# Run Python build from container
 ```
 docker build \
-    -t js-prototypes \
-    ~/git/JavaScript-Prototypes
+    -t python-prototypes \
+    ~/git/Python-Prototypes
 
 docker run \
     -i \
     -t \
     --rm \
-    --name js-prototypes \
-    js-prototypes
+    --name python-prototypes \
+    python-prototypes
 ```
 
-# Run Node build locally
+# Run Python tests locally
 ```
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt-get install -y nodejs
+sudo apt install -y \
+   python
 
-npm install \
-   --save \
-   mocha \
-   chai \
-   fs \
-   request \
-   express \
-   forever 
-
-npm starts
-
-npm test
-
-npm stop
+~/git/Python-Prototypes/run-tests.sh
 ```
-
-# Browser Access
-From browser -> localhost:3000
