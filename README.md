@@ -54,7 +54,7 @@ docker run \
     -i \
     -t \
     --rm \
-    -v ~/git:/git/:Z
+    -v ~/git:/git/:Z \
     python:latest \
     /bin/bash
 ```
