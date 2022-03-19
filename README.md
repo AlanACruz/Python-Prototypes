@@ -46,16 +46,17 @@ docker pull python:latest
 
 # Run Python build from container
 ```
-docker build \
-    -t python-prototypes \
-    ~/git/Python-Prototypes
+# docker build \
+#    -t python-prototypes \
+#    ~/git/Python-Prototypes
 
 docker run \
     -i \
     -t \
     --rm \
-    --name python-prototypes \
-    python-prototypes
+    -v ~/git:/git/:Z
+    python:latest \
+    /bin/bash
 ```
 
 # Run Python tests locally
