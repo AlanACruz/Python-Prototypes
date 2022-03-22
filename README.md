@@ -66,3 +66,11 @@ sudo apt install -y \
 
 ~/git/Python-Prototypes/run-tests.sh
 ```
+
+# Run Jupyter Notebook
+```
+docker run \ 
+   -p 8888:8888 \
+   -v ~/git:/home/jovyan/work:Z \
+   jupyter/scipy-notebook
+```
