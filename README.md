@@ -76,7 +76,7 @@ docker run \
    jupyter/scipy-notebook
 ```
 
-# Run Jupyter Notebook from Anacond based image
+# Run Jupyter Notebook from Anaconda based image
 ```
 docker run \
     -i \
