@@ -54,7 +54,7 @@ docker run \
     -i \
     -t \
     --rm \
-    -v ~/git:/git/:Z \
+    -v ~/git:/root/git/:Z \
     python:latest \
     /bin/bash
 ```
@@ -65,4 +65,12 @@ sudo apt install -y \
    python
 
 ~/git/Python-Prototypes/run-tests.sh
+```
+
+# Run Jupyter Notebook
+```
+docker run \ 
+   -p 8888:8888 \
+   -v ~/git:/home/jovyan/work:Z \
+   jupyter/scipy-notebook
 ```
