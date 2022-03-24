@@ -1,34 +1,31 @@
-# np        https://numpy.org/
+# np          https://numpy.org/
 numpy
 
-# PIL       https://python-pillow.org/
+# PIL        https://python-pillow.org/
 pillow
 
-# Pandas    https://pandas.pydata.org/
+# Pandas     https://pandas.pydata.org/
 pandas
 
-# mp        https://matplotlib.org/
+# mp         https://matplotlib.org/
 matplotlib
 
-# sb        https://seaborn.pydata.org/
+# sb          https://seaborn.pydata.org/
 seaborn
 
-#PyTorch
-torch       # https://pytorch.org/
-torchvision # https://pytorch.org/
-torchaudio  # https://pytorch.org/
-torchtext   # https://pytorch.org/
+#PyTorch      https://pytorch.org/
+torch
+torchvision
+torchaudio
+torchtext
 
-# tf
-tensorflow  # https://www.tensorflow.org/
+# tf          https://www.tensorflow.org/
+# tensorflow
 
-# Theano    http://www.deeplearning.net/software/theano/
-theano
+# Theano      http://www.deeplearning.net/software/theano/
+# theano
 
-# DyNET     http://dynet.io/
-dynet.io
-
-# Jupyter   https://jupyter.org/
+# Jupyter     https://jupyter.org/
 # jupyterlab
 # notebook
 # voila
