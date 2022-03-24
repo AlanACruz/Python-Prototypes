@@ -47,6 +47,7 @@ docker pull python:latest
 # Run Python build from container
 ```
 # docker build \
+#    --no-cache
 #    -t python-prototypes \
 #    ~/git/Python-Prototypes
 
