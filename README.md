@@ -70,8 +70,25 @@ sudo apt install -y \
 
 # Run Jupyter Notebook
 ```
-docker run \ 
+docker run \
    -p 8888:8888 \
    -v ~/git:/home/jovyan/work:Z \
    jupyter/scipy-notebook
+```
+
+# Run Jupyter Notebook from Anacond based image
+```
+docker run \
+    -i \
+    -t \
+    --rm \
+    -p 8888:8888 \
+    -v ~/git:/root/git/:Z \
+    python-prototypes \
+    /bin/bash -c "jupyter notebook \
+      --notebook-dir=~/git \
+      --ip='*' \
+      --port=8888 \
+      --no-browser \
+      --allow-root"
 ```

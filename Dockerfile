@@ -1,10 +1,10 @@
-FROM python:latest
+FROM continuumio/anaconda3:latest
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
-
 COPY . .
+
+RUN conda install jupyter -y && \
+    pip install -r requirements.txt
 
 CMD [ "bash", "./run-test.sh" ]
