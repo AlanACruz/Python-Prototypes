@@ -4,7 +4,7 @@ numpy
 # PIL        https://python-pillow.org/
 pillow
 
-# Pandas     https://pandas.pydata.org/
+# pd     https://pandas.pydata.org/
 pandas
 
 # mp         https://matplotlib.org/
